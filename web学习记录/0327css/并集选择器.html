@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>并集选择器</title>
+	<style > 
+	/*客户需求： p和span和第一个div里面的颜色都是红色*/
+	/*分开写的*/
+	/*p{
+		color: red;
+	}
+	span{
+		color: red;
+	}*/
+	/*并集选择器用逗号隔开，逗号理解为和的意思 ，通常用于集体声明*/
+	/*就是因为这些选择器里面的样式相同*/
+	p,
+	span,
+	.red{
+		color: red;
+	}
+	</style>
+</head>
+<body>
+	<p>淡黄的长裙，蓬松的头发</p>
+	<p>就当是一场梦，醒来后还是很感动</p>
+	<p>放心世界很大，但我会记得你的叮嘱</p>
+	<span>淡黄的长裙，蓬松的头发</span>
+	<span>就当是一场梦，醒来后还是很感动</span>
+	<span>放心世界很大，但我会记得你的叮嘱</span>
+	<div class="red">今日份快乐源泉</div>
+	<div>Melody</div>
+	<h1>冰糖炖雪梨</h1>
+	<h1>冰糖炖雪梨</h1>
+</body>
+</html>
