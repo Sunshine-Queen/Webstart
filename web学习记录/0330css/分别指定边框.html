@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style > 
+		div{
+			width: 200px;
+			height: 400px;
+			/*上边框写法*/
+			border-top: 2px solid red;
+			border-left: 1px solid green;
+			border-right: 2px dotted yellow;
+			border-bottom: 2px solid blue;
+		}
+		input{
+			/*border-top: none;
+			border-left: none;
+			border-right: none;
+			border-bottom: 2px dashed red;*/
+			/*四个边框都去掉*/
+			border: none;
+			/*就近原则 顺序不能和上一句换  先写大的 后写小的*/
+			border-bottom: 2px dashed red;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+	用户名：<input type="text"><br>
+	密码：<input type="text">
+</body>
+</html>
