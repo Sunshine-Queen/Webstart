@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	/*浮动元素默认之间没有缝隙*/
+	/*这个盒子div添加浮动之后，不再是块级元素 默认相当于转换为了Inline-block*/
+	.one,
+	.two {
+		width: 200px;
+		height: 200px;
+		background-color: pink;
+	}
+	.one {
+		float:left;
+	}
+	.two{
+		background-color: purple;
+		float: left;
+	}
+	.three {
+		width: 200px;
+		height: 200px;
+		background-color:blue; 
+		float: right;
+	}
+	</style>
+</head>
+<body>
+	<div class="one"></div>
+	<div class="two"></div>
+	<div class="three"></div>
+</body>
+</html>
