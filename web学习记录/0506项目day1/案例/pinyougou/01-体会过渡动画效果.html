@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+	<title>体会过渡动画效果</title>
+	<style type="text/css">
+	 	div {
+	 		width: 400px;
+	 		height: 150px;
+	 		background-color: pink;
+	 		/*1.transition: 要过渡的属性 话费时间 运动曲线 何时开始*/
+	 		/*2.如果有多组属性，我们用逗号隔开*/
+	 		/*transition: width 1s ease 0s , height 1s ease 0s ,background-color 1s ease 0s;*/
+	 		/*3.all所有属性都会变化*/
+	 		/*transition: all 1s ease 0s;*/
+	 		/*4.过渡写到本身上 div身上*/
+	 		transition:all 0.5s;
+	 	}
+	 	div:hover {
+	 		width: 800px;
+	 		height: 700px;
+	 		background-color: purple;
+	 	}
+	</style>
+</head>
+<body>
+ 	<div></div>
+</body>
+</html>
