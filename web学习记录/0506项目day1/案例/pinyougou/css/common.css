@@ -52,13 +52,13 @@
 	position: absolute;
 	top: 25px;
 	left: 0;
-	width: 180px;
+	width: 175px;
 	height: 56px;
 }
 .logo a {
 	display: block;
 	/*overflow: hidden;*/
-	width: 180px;
+	width: 175px;
 	height: 56px;
 	background: url(../img/logo.png) no-repeat;
 	/*text-indent: -999px;*/
@@ -82,16 +82,16 @@
 	width: 82px;
 	height: 36px;
 	background-color: #b1191a;
-	border: none;
+	border: 0;
 	font-size: 16px;
 	color: #fff;
 }
-.hotwords {
+.hotwrods {
 	position: absolute;
-	top:65px;
+	top: 65px;
 	left: 348px;
 }
-.hotwords a {
+.hotwrods a {
 	margin: 0 10px;
 }
 .shopcar {
@@ -107,7 +107,6 @@
 }
 .car {
 	font-family: 'icomoon';
-	margin-right: 5px;
 	color: #da5555;
 }
 .arrow {
@@ -117,18 +116,17 @@
 .count {
 	position: absolute;
 	top: -5px;
-	/*应该是左侧对齐，文字才能往右走显示*/
+	/*应该是左侧对齐 文字才能往右走显示*/
 	left: 100px;
 	background-color: #e60012;
-	/*加了定位的盒子默认为行内块*/
 	height: 14px;
-	line-height: 14px;
 	padding: 0 3px;
+	line-height: 14px;
 	color: #fff;
-	/*border-radius: 左上角 右上角 右下角 左下角；*/
+	/*border-radius: 左上角 右上角  右下角  左下角;*/
 	border-radius: 7px 7px 7px 0;
 }
-/*nav 开始*/
+/*nav start*/
 .nav {
 	height: 45px;
 	border-bottom: 2px solid #b1191a;
@@ -136,10 +134,8 @@
 .dropdown {
 	width: 209px;
 	height: 45px;
-	background-color: pink;
 }
 .dropdown .dt {
-	/*width: 100%;*/
 	height: 100%;
 	background-color: #b1191a;
 	font-size: 16px;
@@ -151,21 +147,25 @@
 	height: 465px;
 	background-color: #c81623;
 	margin-top: 2px;
+} 
+
+.menu_item:hover {
+	background-color: #fff;
 }
+/*鼠标经过li 里面的 a变颜色*/
+.menu_item:hover a {
+	color: #c81623;
+}
+
 .menu_item {
 	height: 31px;
 	line-height: 31px;
 	margin-left: 1px;
-	padding:  0 10px;
-	transition:all 0.5s;
+	padding: 0 10px;
+	transition: all .5s;
 }
 .menu_item:hover {
-	background-color: #fff;
 	padding-left: 20px;
-}
-/*鼠标经过li 里面的 a 变颜色*/
-.menu_item:hover a {
-	color: #c81623; 
 }
 .menu_item a {
 	font-size: 14px;
@@ -180,17 +180,17 @@
 .navitems {
 	margin-left: 10px;
 }
-.navitems  li {
+.navitems li {
 	float: left;
 }
-.navitems  li a {
+.navitems li a {
 	display: block;
 	height: 45px;
 	padding: 0 25px;
 	line-height: 45px;
 	font-size: 16px;
 }
-/*footer部分*/
+/*footer 部分*/
 .footer {
 	height: 386px;
 	background-color: #f5f5f5;
@@ -200,25 +200,27 @@
 	height: 79px;
 	border-bottom: 1px solid #ccc;
 }
+
 .mod_service li {
 	float: left;
 	width: 240px;
 	height: 79px;
+
 }
 .mod-service-icon {
-	/*浮动的盒子可以直接给大小 不需要转换*/
+	/*浮动的盒子 可以直接给大小的 不需要转换*/
 	float: left;
 	width: 50px;
 	height: 50px;
 	margin-left: 35px;
-	background: url(../img/icons.png) no-repeat ;
+	background: url(../img/icons.png) no-repeat;
 }
 .mod_service_zheng {
-	background-position: -253px -3px;
+	background-position: -253px -3px;	
 }
 .mod_service_tit {
 	float: left;
-	margin-left: 10px;
+	margin-left: 5px;
 }
 .mod_service_tit h5 {
 	margin: 5px 0;
@@ -228,12 +230,6 @@
 }
 .mod_service_bao {
 	background-position: -257px -105px;
-}
-.mod_service_te {
-	background-position: -258px -157px;
-}
-.mod_service_help {
-	background-position: -258px -209px;
 }
 .mod_help {
 	height: 187px;
@@ -248,7 +244,7 @@
 	height: 25px;
 	font-size: 16px;
 }
-.mod_help_item  dd {
+.mod_help_item dd {
 	height: 22px;
 }
 .mod_help_app dt,
@@ -262,8 +258,9 @@
 	text-align: center;
 }
 .mod_copyright_links {
-	margin: 20px  0 15px 0;
+	margin: 20px 0 15px 0;
 }
 .mod_copyright_info {
 	line-height: 18px;
 }
+

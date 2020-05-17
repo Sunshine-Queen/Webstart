@@ -9,6 +9,7 @@
 	position: relative;
 	width: 720px;
 	height: 455px;
+	background-color: purple;
 }
 .arrow-l,
 .arrow-r {
@@ -17,7 +18,7 @@
 	margin-top: -20px;
 	width: 24px;
 	height: 40px;
-	background:rgba(0, 0, 0, .3);
+	background: rgba(0, 0, 0, .3);
 	text-align: center;
 	line-height: 40px;
 	color: #fff;
@@ -32,19 +33,21 @@
 	bottom: 10px;
 	left: 50px;
 }
-.circle  li {
+.circle li {
 	float: left;
 	width: 8px;
 	height: 8px;
 	/*background-color: #fff;*/
-	border: 2px solid rgba(255,255,255,0.5);
+	border: 2px solid rgba(255, 255, 255, 0.5);
 	margin: 0 3px;
 	border-radius: 50%;
 	/*鼠标经过显示小手*/
 	cursor: pointer;
+
 }
 .current {
 	background-color: #fff;
+	box-shadow: 
 }
 .newsflash {
 	width: 250px;
@@ -56,11 +59,12 @@
 }
 .news-hd {
 	height: 32px;
-	/*dotted 点线 dashed 虚线*/
+	/*dotted 点线  dashed  虚线*/
 	border-bottom: 1px dotted #ccc;
-	padding: 0 15px;
+	padding:0  15px;
 	font-size: 14px;
 	line-height: 32px;
+
 }
 .news-hd a {
 	float: right;
@@ -92,7 +96,7 @@
 }
 .lifeservice li a {
 	display: block;
-	/*解决i 引起的 外边距塌陷合并的问题*/
+	/* overflow: hidden; 解决i 引起的 外边距塌陷合并的问题*/
 	overflow: hidden;
 	height: 100%;
 }
@@ -102,16 +106,16 @@
 .hot {
 	position: absolute;
 	right: 0;
-	top:0;
-	width: 13px;
+	top: 0;
+	width: 12px;
 	height: 15px;
-	background:url(../img/jian.png) no-repeat;
+	background: url(../img/jian.jpg) no-repeat;
 }
 .service_ico {
 	display: block;
 	width: 24px;
 	height: 24px;
-	background:url(../img/icons.png) no-repeat;
+	background: url(../img/icons.png) no-repeat;
 	margin: 10px auto;
 }
 .service_ico_huafei {
@@ -120,18 +124,6 @@
 .service_ico_feiji {
 	width: 26px;
 	background-position: -78px -16px;
-}
-.service_ico_dianying {
-	background-position: -141px -16px;
-}
-.service_ico_youxi {
-	background-position: -205px -18px;
-}
-.service_ico_caipiao {
-	background-position: -16px -88px;
-}
-.service_ico_jiayouka {
-	background-position: -80px -88px;
 }
 .bargain {
 	height: 75px;
@@ -154,7 +146,6 @@
 .recom-hd h3 {
 	font-size: 18px;
 	color: #fff;
-	/*不加粗*/
 	font-weight: normal;
 }
 .recom-bd {
@@ -167,7 +158,7 @@
 	width: 249px;
 	height: 145px;
 	border-right: 1px solid #ccc;
-	margin-top: 10px;
+    margin-top: 10px;
 }
 .recom-bd .last {
 	border-right: 0;
@@ -209,7 +200,7 @@
 }
 .w220 {
 	width: 220px;
-	border-right: 1px solid #ccc;
+	border-right: 1px solid #ccc;	
 }
 .tab-con li {
 	float: left;
@@ -220,7 +211,7 @@
 }
 .tab-con-list {
 	overflow: hidden;
-	margin-bottom:  15px ;
+	margin-bottom: 15px;
 }
 .tab-con-list li {
 	width: 86px;
@@ -233,12 +224,11 @@
 .box-bd li {
 	overflow: hidden;
 }
-
 .box-bd img {
-	/*过渡写到本身上，谁做动画 给谁加*/
-	transition: all 0.2s;
+	/*过渡写到本身上， 谁做动画，给谁加*/
+	transition: all .2s;
 }
-/*我们鼠标经过图片 往右走8px*/
+/*我们鼠标经过图片 往右走 8px*/
 .box-bd img:hover {
 	margin-left: 8px;
 }
@@ -259,7 +249,10 @@
 	border-bottom: 1px solid #ccc;
 	cursor: pointer;
 }
-.fixedtool  .current {
+.fixedtool .current {
 	background-color: #c81623;
 	color: #fff;
 }
+
+
+
